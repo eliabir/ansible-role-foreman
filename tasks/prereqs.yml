@@ -1,0 +1,7 @@
+- name: Installing prereq packages
+  become: true
+  ansible.builtin.include_tasks:
+    name:
+      - ca-certificates
+    state: present
+

@@ -1,0 +1,8 @@
+- name: Install prerequisite packages
+  ansible.builtin.include_tasks: prereqs.yml
+
+- name: Install puppet
+  ansible.builtin.include_tasks: puppet.yml
+
+- name: Install Foreman
+  ansible.builtin.include_tasks: repos.yml

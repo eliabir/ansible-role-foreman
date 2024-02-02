@@ -1,0 +1,4 @@
+- name: Install Puppet from deb file
+  become: true
+  ansible.builtin.include_tasks:
+    deb: "{{ puppet_repo }}"
